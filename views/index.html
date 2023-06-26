@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/assets/img/basic/favicon.ico" type="image/x-icon">
+    <title>HUME gpt test</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/app.css">
+
+</head>
+<body class="light sidebar-mini sidebar-collapse theme-dark">
+<!-- Pre loader -->
+<div id="loader" class="loader">
+    <div class="plane-container">
+        <div class="preloader-wrapper small active">
+            <div class="spinner-layer spinner-blue">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div><div class="gap-patch">
+                <div class="circle"></div>
+            </div><div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+            </div>
+
+            <div class="spinner-layer spinner-red">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div><div class="gap-patch">
+                <div class="circle"></div>
+            </div><div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+            </div>
+
+            <div class="spinner-layer spinner-yellow">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div><div class="gap-patch">
+                <div class="circle"></div>
+            </div><div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+            </div>
+
+            <div class="spinner-layer spinner-green">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div><div class="gap-patch">
+                <div class="circle"></div>
+            </div><div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="app">
+
+    <a href="#" data-toggle="push-menu" class="paper-nav-toggle left ml-2 fixed">
+        <i></i>
+    </a>
+    <div class="has-sidebar-left has-sidebar-tabs">
+        <!--navbar-->
+        <div class="sticky">
+            <div class="navbar navbar-expand d-flex justify-content-between bd-navbar white shadow">
+                <div class="relative">
+                    <div class="d-flex">
+                        <div class="d-none d-md-block">
+                            <h1 class="nav-title text-white">자가진단 챗봇플랫폼</h1>
+                        </div>
+                    </div>
+                </div>
+                <!--Top Menu Start -->
+    <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+            <!-- Messages-->
+            <li class="dropdown custom-dropdown messages-menu">
+                <a href="#" class="nav-link" data-toggle="dropdown">
+                    <i class="icon-envelope-o"></i>
+                    <span class="badge badge-success badge-mini rounded-circle">4</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li>
+                        <!-- inner menu: contains the actual data -->
+                        <ul class="menu pl-2 pr-2">
+                            <!-- start message -->
+                            <li>
+                                <a href="#">
+                                    <div class="avatar float-left">
+                                        <img src="/assets/img/dummy/u4.png" alt="">
+                                        <span class="avatar-badge busy"></span>
+                                    </div>
+                                    <h4>
+                                        Support Team
+                                        <small><i class="icon icon-clock-o"></i> 5 mins</small>
+                                    </h4>
+                                    <p>Why not buy a new awesome theme?</p>
+                                </a>
+                            </li>
+                            <!-- end message -->
+                            <!-- start message -->
+                            <li>
+                                <a href="#">
+                                    <div class="avatar float-left">
+                                        <img src="/assets/img/dummy/u1.png" alt="">
+                                        <span class="avatar-badge online"></span>
+                                    </div>
+                                    <h4>
+                                        Support Team
+                                        <small><i class="icon icon-clock-o"></i> 5 mins</small>
+                                    </h4>
+                                    <p>Why not buy a new awesome theme?</p>
+                                </a>
+                            </li>
+                            <!-- end message -->
+                            <!-- start message -->
+                            <li>
+                                <a href="#">
+                                    <div class="avatar float-left">
+                                        <img src="/assets/img/dummy/u2.png" alt="">
+                                        <span class="avatar-badge idle"></span>
+                                    </div>
+                                    <h4>
+                                        Support Team
+                                        <small><i class="icon icon-clock-o"></i> 5 mins</small>
+                                    </h4>
+                                    <p>Why not buy a new awesome theme?</p>
+                                </a>
+                            </li>
+                            <!-- end message -->
+                            <!-- start message -->
+                            <li>
+                                <a href="#">
+                                    <div class="avatar float-left">
+                                        <img src="/assets/img/dummy/u3.png" alt="">
+                                        <span class="avatar-badge busy"></span>
+                                    </div>
+                                    <h4>
+                                        Support Team
+                                        <small><i class="icon icon-clock-o"></i> 5 mins</small>
+                                    </h4>
+                                    <p>Why not buy a new awesome theme?</p>
+                                </a>
+                            </li>
+                            <!-- end message -->
+                        </ul>
+                    </li>
+                    <li class="footer s-12 p-2 text-center"><a href="#">See All Messages</a></li>
+                </ul>
+            </li>
+            <!-- Notifications -->
+            <li class="dropdown custom-dropdown notifications-menu">
+                <a href="#" class=" nav-link" data-toggle="dropdown" aria-expanded="false">
+                    <i class="icon-notifications_none"></i>
+                    <span class="badge badge-danger badge-mini rounded-circle">4</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li class="header">You have 10 notifications</li>
+                    <li>
+                        <!-- inner menu: contains the actual data -->
+                        <ul class="menu">
+                            <li>
+                                <a href="#">
+                                    <i class="icon icon-data_usage text-success"></i> 5 new members joined today
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="icon icon-data_usage text-danger"></i> 5 new members joined today
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="icon icon-data_usage text-yellow"></i> 5 new members joined today
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer p-2 text-center"><a href="#">View all</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="nav-link " data-toggle="collapse" data-target="#navbarToggleExternalContent"
+                aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="icon-search3"></i>
+                </a>
+            </li>
+            <!-- Right Sidebar Toggle Button -->
+            <li>
+                <a class="nav-link ml-2" data-toggle="control-sidebar">
+                    <i class="icon-format_align_right"></i>
+                </a>
+            </li>
+            <!-- User Account-->
+            <li class="dropdown custom-dropdown user user-menu ">
+                <a href="#" class="nav-link" data-toggle="dropdown">
+                    <img src="/assets/img/dummy/u8.png" class="user-image" alt="User Image">
+                    <i class="icon-more_vert "></i>
+                </a>
+                <div class="dropdown-menu p-4 dropdown-menu-right">
+                    <div class="row box justify-content-between my-4">
+                        <div class="col">
+                            <a href="#">
+                                <i class="icon-apps purple lighten-2 avatar  r-5"></i>
+                                <div class="pt-1">Apps</div>
+                            </a>
+                        </div>
+                        <div class="col"><a href="#">
+                            <i class="icon-beach_access pink lighten-1 avatar  r-5"></i>
+                            <div class="pt-1">Profile</div>
+                        </a></div>
+                        <div class="col">
+                            <a href="#">
+                                <i class="icon-perm_data_setting indigo lighten-2 avatar  r-5"></i>
+                                <div class="pt-1">Settings</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row box justify-content-between my-4">
+                        <div class="col">
+                            <a href="#">
+                                <i class="icon-star light-green lighten-1 avatar  r-5"></i>
+                                <div class="pt-1">Favourites</div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#">
+                                <i class="icon-save2 orange accent-1 avatar  r-5"></i>
+                                <div class="pt-1">Saved</div>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="#">
+                                <i class="icon-perm_data_setting grey darken-3 avatar  r-5"></i>
+                                <div class="pt-1">Settings</div>
+                            </a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row box justify-content-between my-4">
+                        <div class="col">
+                            <a href="#">
+                                <i class="icon-apps purple lighten-2 avatar  r-5"></i>
+                                <div class="pt-1">Apps</div>
+                            </a>
+                        </div>
+                        <div class="col"><a href="#">
+                            <i class="icon-beach_access pink lighten-1 avatar  r-5"></i>
+                            <div class="pt-1">Profile</div>
+                        </a></div>
+                        <div class="col">
+                            <a href="#">
+                                <i class="icon-perm_data_setting indigo lighten-2 avatar  r-5"></i>
+                                <div class="pt-1">Settings</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+            </div>
+        </div>
+        <!--#navbar-->
+        <div class="container-fluid relative animatedParent animateOnce my-3">
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="text-white" style="font-size: large;">챗GPT TEST</p>
+                            <div class="row">
+                                <input class="col-10 form-control text-white" id="prompt"><button class="col-2 btn btn-primary" onclick="send()">전송</button>
+                            </div>
+                            <div class="row">
+                                <div class="preloader-wrapper big active mt-3 ml-3" id="spinner">
+                                    <div class="spinner-layer spinner-blue-only">
+                                        <div class="circle-clipper left">
+                                            <div class="circle"></div>
+                                        </div><div class="gap-patch">
+                                        <div class="circle"></div>
+                                    </div><div class="circle-clipper right">
+                                        <div class="circle"></div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <textarea class="col mt-5 mb-3 text-primary" id="ans" style="font-size:large; background-color: #272c33; border:0px;" rows="10">
+                                    
+                                </textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       
+            <div class="card no-b my-3">
+                <div class="card-body">
+                    <div class="my-2 height-300">
+                        <canvas
+                                data-chart="bar"
+                                data-dataset="[
+                                            [21, 90, 55, 0, 59, 77, 12,21, 90, 55, 0, 59, 77, 12,21, 90, 55, 0, 59, 77, 12],
+                                            [12, 40, 16, 17, 89, 0, 12,12, 0, 55, 60, 79, 99, 12,12, 0, 55, 60, 79, 99, 12],
+                                            [12, 40, 16, 17, 89, 0,12, 40, 16, 17, 89, 0, 12,12, 40, 16, 17, 89, 0, 12],
+                                            ]"
+                                data-labels="['Blue','Yellow','Green','Purple','Orange','Red','Indigo','Blue','Yellow','Green','Purple','Orange','Red','Indigo','Blue','Yellow','Green','Purple','Orange','Red','Indigo']"
+                                data-dataset-options="[
+                                        {
+                                            label: 'HTML',
+                                            backgroundColor: '#7986cb',
+                                            borderWidth: 0,
+
+                                        },
+                                        {
+                                            label: 'Wordpress',
+                                            backgroundColor: '#88e2ff',
+                                            borderWidth: 0,
+
+                                        },
+                                        {
+                                            label: 'Laravel',
+                                            backgroundColor: '#e2e8f0',
+                                            borderWidth: 0,
+
+                                        }
+                                        ]"
+                                data-options="{
+                                        legend: { display: true,},
+                                        scales: {
+                                            xAxes: [{
+                                                stacked: true,
+                                                barThickness:5,
+                                                gridLines: {
+                                                    zeroLineColor: 'rgba(255,255,255,0.1)',
+                                                    color: 'rgba(255,255,255,0.1)',
+                                                    display: false,},
+                                                }],
+                                            yAxes: [{
+                                                    stacked: true,
+                                                        gridLines: {
+                                                            zeroLineColor: 'rgba(255,255,255,0.1)',
+                                                            color: 'rgba(255,255,255,0.1)',
+                                                        }
+                                        }]
+
+                                        }
+                                    }"
+                        >
+                        </canvas>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="row my-3 no-gutters">
+                        <div class="col-md-3">
+                            <h1>Tasks</h1>
+                            Currently assigned tasks to team.
+                        </div>
+                        <div class="col-md-9">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="mb-3">
+                                            <h6>New Layout</h6>
+                                            <small>75% Completed</small>
+                                        </div>
+                                        <figure class="avatar">
+                                            <img src="/assets/img/dummy/u12.png" alt=""></figure>
+                                    </div>
+                                    <div class="progress progress-xs mb-3">
+                                        <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75"
+                                            aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="mb-3">
+                                            <h6>New Layout</h6>
+                                            <small>75% Completed</small>
+                                        </div>
+                                        <figure class="avatar">
+                                            <img src="/assets/img/dummy/u2.png" alt=""></figure>
+                                    </div>
+                                    <div class="progress progress-xs mb-3">
+                                        <div class="progress-bar bg-indigo" role="progressbar" style="width: 75%;"
+                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="mb-3">
+                                            <h6>New Layout</h6>
+                                            <small>75% Completed</small>
+                                        </div>
+                                        <div class="avatar-group">
+                                            <figure class="avatar">
+                                                <img src="/assets/img/dummy/u4.png" alt=""></figure>
+                                            <figure class="avatar">
+                                                <img src="/assets/img/dummy/u11.png" alt=""></figure>
+                                            <figure class="avatar">
+                                                <img src="/assets/img/dummy/u1.png" alt=""></figure>
+                                        </div>
+                                    </div>
+                                    <div class="progress progress-xs mb-3">
+                                        <div class="progress-bar yellow" role="progressbar" style="width: 75%;"
+                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div class="mb-3">
+                                            <h6>New Layout</h6>
+                                            <small>75% Completed</small>
+                                        </div>
+                                        <figure class="avatar">
+                                            <img src="/assets/img/dummy/u5.png" alt=""></figure>
+                                    </div>
+                                    <div class="progress progress-xs mb-3">
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 75%;"
+                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" row my-3">
+                <div class="col-md-6">
+                    <div class=" card b-0">
+                        <div class="card-body p-5">
+                            <canvas id="gradientChart" width="600" height="340"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class=" card no-b">
+                        <div class="card-body">
+                            <table class="table table-hover earning-box">
+                                <tbody>
+                                <tr class="no-b">
+                                    <td class="w-10">
+                                        <a href="panel-page-profile.html" class="avatar avatar-lg">
+                                            <img src="/assets/img/dummy/u6.png" alt="">
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <h6>Sara Kamzoon</h6>
+                                        <small class="text-muted">Marketing Manager</small>
+                                    </td>
+                                    <td>25</td>
+                                    <td>$250</td>
+                                </tr>
+                                <tr>
+                                    <td class="w-10">
+                                        <a href="panel-page-profile.html" class="avatar avatar-lg">
+                                            <img src="/assets/img/dummy/u9.png" alt="">
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <h6>Sara Kamzoon</h6>
+                                        <small class="text-muted">Marketing Manager</small>
+                                    </td>
+                                    <td>25</td>
+                                    <td>$250</td>
+                                </tr>
+                                <tr>
+                                    <td class="w-10">
+                                        <a href="panel-page-profile.html" class="avatar avatar-lg">
+                                            <img src="/assets/img/dummy/u11.png" alt="">
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <h6>Sara Kamzoon</h6>
+                                        <small class="text-muted">Marketing Manager</small>
+                                    </td>
+                                    <td>25</td>
+                                    <td>$250</td>
+                                </tr>
+                                <tr>
+                                    <td class="w-10">
+                                        <a href="panel-page-profile.html" class="avatar avatar-lg">
+                                            <img src="/assets/img/dummy/u12.png" alt="">
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <h6>Sara Kamzoon</h6>
+                                        <small class="text-muted">Marketing Manager</small>
+                                    </td>
+                                    <td>25</td>
+                                    <td>$250</td>
+                                </tr>
+                                <tr>
+                                    <td class="w-10">
+                                        <a href="panel-page-profile.html" class="avatar avatar-lg">
+                                            <img src="/assets/img/dummy/u5.png" alt="">
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <h6>Sara Kamzoon</h6>
+                                        <small class="text-muted">Marketing Manager</small>
+                                    </td>
+                                    <td>25</td>
+                                    <td>$250</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--/#app -->
+<script src="/assets/js/app.js"></script>
+<script>
+    function send() {
+        const p = $('#prompt').val();
+        $('#spinner').css('display', 'block');
+        $.post('/gpt', {p:p}, (data,err) => {
+            $('#spinner').css('display', 'none');
+            console.log('data = ' + data);
+            $('#ans').html(data);
+        });
+    }
+    window.onload=()=>{
+        $('#spinner').css('display', 'none');
+        $('#prompt').val('정보보호 및 개인정보는 어떻게 관리해야 하나요?');
+    }
+</script>
+
+</body>
+</html>
