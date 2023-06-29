@@ -272,7 +272,7 @@
                 <div class="col">
                     <div class="card">
                         <div class="card-body">
-                            <p class="text-white" style="font-size: large;">챗GPT TEST</p>
+                            <p class="text-white" style="font-size: large;">챗GPT TEST&nbsp;&nbsp;|&nbsp;&nbsp;쿼리 횟수 : <span id="cnt" style="color:red !important;"></span></p>
                             <div class="row">
                                 <input class="col-10 form-control text-white" id="prompt"><button class="col-2 btn btn-primary" onclick="send()">전송</button>
                             </div>
@@ -288,9 +288,7 @@
                                     </div>
                                     </div>
                                 </div>
-                                <textarea class="col mt-5 mb-3 text-primary" id="ans" style="font-size:large; background-color: #272c33; border:0px;" rows="10">
-                                    
-                                </textarea>
+                                <textarea class="col mt-5 mb-3 text-primary" id="ans" style="font-size:large; background-color: #272c33; border:0px;" rows="10"></textarea>
                             </div>
                         </div>
                     </div>
@@ -522,6 +520,7 @@
 <script>
     function send() {
         const p = $('#prompt').val();
+        $('#cnt').html((parseInt($('#cnt').html()) + 1) + "");
         $('#spinner').css('display', 'block');
         $.post('/gpt', {p:p}, (data,err) => {
             $('#spinner').css('display', 'none');
@@ -531,7 +530,10 @@
     }
     window.onload=()=>{
         $('#spinner').css('display', 'none');
-        $('#prompt').val('정보보호 및 개인정보는 어떻게 관리해야 하나요?');
+        $('#prompt').val('정보보호 및 개인정보는 어떻게 관리해야 하나요? 2문장으로 말해줘.');
+        $.get('/count', (data,err) => {
+            $('#cnt').html(data);
+        });
     }
 </script>
 
