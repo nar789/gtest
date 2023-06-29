@@ -1,1 +1,1 @@
-module.exports = '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';
+module.exports = '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';
